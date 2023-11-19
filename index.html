@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Travel Splash Page Animation</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <h1 class="title">
+    <span class="char top">T</span>
+    <span class="char bottom">R</span>
+    <span class="char top">A</span>
+    <span class="char bottom">V</span>
+    <span class="char top">E</span>
+    <span class="char bottom">L</span>
+  </h1>
+
+  <svg id="line" viewBox="0 0 812.000000 612.000000">
+    <defs>
+      <mask id="theMask" maskUnits="userSpaceOnUse">
+        <path id="mask-path" d="M 50 300 Q 150 150 200 300 Q 250 450 300 300 Q 350 150 400 300 C 450 550 450 50 500 300 C 500 300 550 500 600 300 A 50 50 0 1 1 750 300 A 50 50 0 1 1 650 300 A 50 50 0 1 1 650 350 Q 625 300 500 250 Q 350 200 350 350 A 50 50 0 1 1 150 250 A 50 50 0 1 1 250 350 Q 50 450 50 300 " stroke="white" stroke-width="1" fill="#ffffff" fill-opacity="0" />
+      </mask>
+    </defs>
+
+    <g mask="url(#theMask)">
+      <path id="line-path" d="M 50 300 Q 150 150 200 300 Q 250 450 300 300 Q 350 150 400 300 C 450 550 450 50 500 300 C 500 300 550 500 600 300 A 50 50 0 1 1 750 300 A 50 50 0 1 1 650 300 A 50 50 0 1 1 650 350 Q 625 300 500 250 Q 350 200 350 350 A 50 50 0 1 1 150 250 A 50 50 0 1 1 250 350 Q 50 450 50 300 " stroke-dasharray="5,5" stroke="#f3f5e8" stroke-width="1" fill="#f3f5e8" fill-opacity="0" />
+    </g>
+  </svg>
+
+  <svg version="1.0" class="plane" xmlns="http://www.w3.org/2000/svg" width="980.000000pt" height="942.000000pt" viewBox="0 0 980.000000 942.000000" preserveAspectRatio="xMidYMid meet">
+
+    <g transform="translate(0.000000,942.000000) scale(0.100000,-0.100000)" fill="#f3f5e8" stroke="none">
+      <path d="M1695 9408 c-123 -46 -269 -233 -282 -363 -11 -108 52 -181 357 -408
+354 -263 398 -297 530 -407 629 -525 1743 -1593 2103 -2018 103 -121 182 -233
+202 -286 21 -55 11 -94 -41 -154 -74 -87 -229 -171 -620 -335 -860 -361 -1561
+-703 -1933 -941 -50 -33 -80 -46 -95 -42 -38 10 -235 125 -520 303 -326 205
+-549 331 -658 373 -62 24 -93 30 -157 30 -164 0 -468 -109 -554 -198 l-27 -28
+35 -58 c90 -149 363 -466 840 -976 l193 -206 5 -539 c3 -297 10 -589 16 -650
+17 -176 40 -320 62 -392 l21 -66 69 6 c128 11 387 131 497 232 101 91 147 221
+307 855 95 380 130 505 158 572 15 35 19 37 94 53 297 64 678 175 1083 314
+162 55 251 88 715 266 577 221 777 287 885 292 144 7 184 -33 215 -212 59
+-352 40 -1580 -41 -2710 -29 -402 -58 -641 -122 -1015 -56 -322 -65 -475 -33
+-547 41 -89 174 -146 341 -147 172 -1 233 44 338 252 135 266 310 787 480
+1436 l29 110 309 126 c331 135 380 159 443 220 85 82 108 175 72 287 -29 90
+-77 154 -136 183 -79 38 -156 27 -352 -53 -90 -36 -163 -64 -163 -62 0 5 262
+990 263 991 1 0 94 38 207 83 390 157 522 241 592 374 59 111 1 289 -114 348
+-87 45 -163 35 -361 -47 -72 -30 -132 -52 -135 -50 -2 3 102 328 230 723 l234
+718 520 212 c928 380 1023 421 1294 563 176 93 395 240 493 331 152 140 227
+284 213 410 -17 163 -104 214 -366 213 -165 -1 -277 -16 -597 -79 -257 -52
+-490 -110 -636 -159 -56 -18 -375 -145 -708 -280 l-607 -246 -663 350 c-365
+193 -667 354 -671 358 -5 5 40 28 99 52 203 81 258 116 301 189 72 122 -6 324
+-144 372 -59 20 -213 15 -309 -10 -44 -12 -193 -67 -331 -122 l-251 -100 -437
+262 c-240 144 -433 266 -429 270 4 4 73 33 153 66 80 32 165 72 190 88 108 73
+135 189 75 322 -36 80 -71 120 -132 149 -46 23 -68 27 -133 27 -94 -1 -157
+-22 -526 -173 l-251 -103 -184 110 c-596 358 -1084 604 -1330 673 -92 25 -176
+32 -214 18z" />
+    </g>
+  </svg>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MotionPathPlugin.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MotionPathHelper.min.js?v=46'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
